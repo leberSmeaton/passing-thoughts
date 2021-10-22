@@ -29,7 +29,8 @@ function App() {
 
   return (
     <div className="App">
-      <header><h1>Passing Thoughts</h1></header>
+      <header><h1>Just Hang In There!</h1></header>
+      <h3>Passing Thoughts</h3>
       <main>
         <AddThoughtForm addThought={addThought} />
         <ul className="thoughts">

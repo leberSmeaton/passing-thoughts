@@ -1,6 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-size: 16pt;
+  background-image: url("./hanginthere.jpg");
+  background-repeat: no-repeat;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -20,12 +22,22 @@ button {
 }
 
 .App {
+  padding-top: 70px;
   margin: 0 auto;
   max-width: 600px;
   width: 95%;
 }
 
-.App h1:before {
+.App h1 {
+  color: whitesmoke;
+  font-family: "Festive", cursive;
+}
+
+.App h3 {
+  color: whitesmoke;
+}
+
+.App h3:before {
   content: "💭";
   margin-right: 0.5em;
 }
