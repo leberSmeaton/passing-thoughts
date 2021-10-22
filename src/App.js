@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { AddThoughtForm } from './AddThoughtForm';
 import { Thought } from './Thought';
 import { generateId, getNewExpirationTime } from './utilities';
 
-export default function App() {
+
+function App() {
   const [thoughts, setThoughts] = useState([
     {
       id: generateId(),
@@ -41,4 +42,5 @@ export default function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+// ReactDOM.render(<App />, document.getElementById('app'));
+export default App;
