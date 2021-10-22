@@ -4,7 +4,7 @@ import { AddThoughtForm } from './AddThoughtForm';
 import { Thought } from './Thought';
 import { generateId, getNewExpirationTime } from './utilities';
 
-function App() {
+export default function App() {
   const [thoughts, setThoughts] = useState([
     {
       id: generateId(),
@@ -32,8 +32,8 @@ function App() {
       <main>
         <AddThoughtForm addThought={addThought} />
         <ul className="thoughts">
-          {thoughts.map((thought) => {
-            <Thought key={thought.id} thought={thought} removeThought={removeThought} />
+          {thoughts.map((thought) => { 
+            return <Thought key={thought.id} thought={thought} removeThought={removeThought} /> 
           })}
         </ul>
       </main>
@@ -41,7 +41,4 @@ function App() {
   );
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById('app'));
